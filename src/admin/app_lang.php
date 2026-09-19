@@ -217,6 +217,9 @@ $lang['admin_modules_enable_all_success'] = 'Visi moduliai sėkmingai įjungti.'
 $lang['admin_modules_enable_confirm'] = 'Ar tikrai norite įjungti modulį: <b>%s</b>?';
 $lang['admin_modules_enable_error'] = 'Nepavyko įjungti modulio.';
 $lang['admin_modules_enable_success'] = 'Modulis sėkmingai įjungtas.';
+$lang['admin_modules_install_confirm'] = 'Ar tikrai norite įdiegti šį modulį?';
+$lang['admin_modules_install_error'] = 'Nepavyko įdiegti modulio.';
+$lang['admin_modules_install_success'] = 'Modulis sėkmingai įdiegtas.';
 $lang['admin_modules_install_tip'] = 'Moduliai prideda naujas funkcijas ir galimybes jūsų svetainei. Naršykite galimus modulius <a href="%s" target="_blank" rel="noopener">modulių kataloge</a> arba įkelkite vieną kaip <b>.zip</b> paketą.';
 
 /**
@@ -242,6 +245,9 @@ $lang['admin_plugins_enable_all_success'] = 'Visi įskiepiai sėkmingai įjungti
 $lang['admin_plugins_enable_confirm'] = 'Ar tikrai norite įjungti įskiepį: <b>%s</b>?';
 $lang['admin_plugins_enable_error'] = 'Nepavyko įjungti įskiepio.';
 $lang['admin_plugins_enable_success'] = 'Įskiepis sėkmingai įjungtas.';
+$lang['admin_plugins_install_confirm'] = 'Ar tikrai norite įdiegti šį papildinį?';
+$lang['admin_plugins_install_error'] = 'Nepavyko įdiegti papildinio.';
+$lang['admin_plugins_install_success'] = 'Papildinys sėkmingai įdiegtas.';
 $lang['admin_plugins_install_tip'] = 'Įskiepiai išplečia esamas funkcijas su papildomomis parinktimis ar integracijomis. Įdiekite iš <a href="%s" target="_blank" rel="noopener">įskiepių katalogo</a> arba įkelkite <b>.zip</b> failą.';
 
 /**
@@ -261,6 +267,9 @@ $lang['admin_themes_disable_success'] = 'Tema sėkmingai išjungta.';
 $lang['admin_themes_enable_confirm'] = 'Ar tikrai norite įjungti temą: <b>%s</b>?';
 $lang['admin_themes_enable_error'] = 'Nepavyko aktyvuoti temos.';
 $lang['admin_themes_enable_success'] = 'Tema sėkmingai aktyvuota.';
+$lang['admin_themes_install_confirm'] = 'Ar tikrai norite įdiegti šią temą?';
+$lang['admin_themes_install_error'] = 'Nepavyko įdiegti temos.';
+$lang['admin_themes_install_success'] = 'Tema sėkmingai įdiegta.';
 $lang['admin_themes_install_tip'] = 'Temos keičia jūsų svetainės išvaizdą ir išdėstymą. Pasirinkite iš <a href="%s" target="_blank" rel="noopener">temų bibliotekos</a> arba įkelkite <b>.zip</b> failą, kad įdiegtumėte savo.';
 $lang['admin_themes_none_tip'] = 'Ši programa veikia be temos. Įdiekite temą, kad pritaikytumėte viešąją sąsają.';
 
@@ -306,12 +315,65 @@ $lang['admin_languages_enable_confirm'] = 'Ar tikrai norite įjungti kalbą: <b>
 $lang['admin_languages_enable_error'] = 'Nepavyko įjungti kalbos.';
 $lang['admin_languages_enable_error_nochange'] = 'Ši kalba jau yra įjungta.';
 $lang['admin_languages_enable_success'] = 'Kalba sėkmingai įjungta.';
+$lang['admin_languages_install_confirm'] = 'Ar tikrai norite įdiegti šią kalbą?';
+$lang['admin_languages_install_error'] = 'Nepavyko įdiegti kalbos.';
+$lang['admin_languages_install_success'] = 'Kalba sėkmingai įdiegta.';
 $lang['admin_languages_install_tip'] = 'Kalbos prideda vertimus jūsų svetainės sąsajai ir turiniui. Peržiūrėkite galimas kalbas <a href="%s" target="_blank" rel="noopener">kalbų kataloge</a> arba įkelkite <b>.zip</b> paketą, kad įdiegtumėte savo kalbą.';
 $lang['admin_languages_tip'] = 'Įjunkite, išjunkite ir nustatykite svetainės numatytąją kalbą. Įjungtos kalbos yra prieinamos svetainės lankytojams.';
 
 /**
  * ---------------------------------------------------------------
- * Updates & License Section
+ * Package Driver & Installation Messages
+ * ---------------------------------------------------------------
+ * Language lines for package installation, download, backup, and validation.
+ */
+$lang['package_already_exists'] = 'Paketas jau egzistuoja.';
+$lang['package_archive_download_failed'] = 'Nepavyko atsisiųsti paketo archyvo.';
+$lang['package_backup_create_error'] = 'Nepavyko sukurti paketo atsarginės kopijos.';
+$lang['package_backup_dir_failed'] = 'Nepavyko sukurti atsarginės kopijos katalogo %s';
+$lang['package_backup_missing'] = 'Atsarginės kopijos failas neegzistuoja.';
+$lang['package_backup_path_error'] = 'Nepavyko nustatyti atsarginės kopijos failo kelio.';
+$lang['package_backup_request_invalid'] = 'Neteisinga atsarginės kopijos užklausa.';
+$lang['package_backup_restore_error'] = 'Nepavyko atkurti paketo atsarginės kopijos.';
+$lang['package_catalog_type_unknown'] = 'Nežinomas katalogo tipas.';
+$lang['package_checksum_error'] = 'Paketo kontrolinės sumos (checksum) patvirtinimas nepavyko.';
+$lang['package_copy_files_error'] = 'Nepavyko nukopijuoti paketo failų į paskirties vietą.';
+$lang['package_copy_updates_error'] = 'Nepavyko nukopijuoti atnaujinimo failų į paskirties vietą.';
+$lang['package_dest_dir_failed'] = 'Nepavyko sukurti paskirties katalogo %s';
+$lang['package_destination_error'] = 'Nepavyko nustatyti paketo paskirties vietos.';
+$lang['package_download_dir_failed'] = 'Nepavyko sukurti atsisiuntimo katalogo %s';
+$lang['package_download_empty'] = 'Paketo atsisiuntimas grąžino tuščią atsaką.';
+$lang['package_download_request_invalid'] = 'Neteisinga paketo atsisiuntimo užklausa.';
+$lang['package_extract_failed'] = 'Nepavyko išskleisti ZIP %s';
+$lang['package_invalid_lang_files'] = 'Neteisinga kalba — trūksta privalomų programos kalbos failų.';
+$lang['package_invalid_lang_structure'] = 'Neteisinga kalba — trūksta admin ir/arba ci3 katalogų.';
+$lang['package_invalid_missing_info'] = 'Netinkamas %s: trūksta „info.php“.';
+$lang['package_invalid_module_structure'] = 'Neteisingas modulis — trūksta privalomų config ir/arba controllers katalogų.';
+$lang['package_invalid_plugin_boot'] = 'Neteisingas papildinys (plugin) — trūksta "boot.php".';
+$lang['package_invalid_plugin_contents'] = 'Neteisingas papildinys (plugin) — papildiniuose negali būti valdiklių ar rodinių (views).';
+$lang['package_invalid_theme_boot'] = 'Neteisinga tema — trūksta "boot.php".';
+$lang['package_invalid_theme_views'] = 'Neteisinga tema — trūksta views katalogo.';
+$lang['package_no_root_dir'] = 'Pakete nėra šakninio (root) katalogo.';
+$lang['package_not_downloadable'] = 'Paketas nėra viešai atsisiunčiamas.';
+$lang['package_not_in_registry'] = 'Paketas nepasiekiamas viešajame registre.';
+$lang['package_request_invalid'] = 'Neteisinga paketo užklausa.';
+$lang['package_rollback_request_invalid'] = 'Neteisinga grąžinimo (rollback) užklausa.';
+$lang['package_root_mismatch'] = 'Paketo archyvo šaknis neatitinka %s';
+$lang['package_single_root_required'] = 'Pakete turi būti lygiai vienas šakninis katalogas.';
+$lang['package_source_error'] = 'Nepavyko nustatyti paketo šaltinio.';
+$lang['package_system_core_restricted'] = 'Sistemos komponentų negalima įdiegti kaip paketų.';
+$lang['package_temp_dir_failed'] = 'Nepavyko sukurti laikinojo katalogo %s';
+$lang['package_type_unknown'] = 'Nežinomas paketo tipas.';
+$lang['package_update_request_invalid'] = 'Neteisinga paketo atnaujinimo užklausa.';
+$lang['package_update_root_mismatch'] = 'Atnaujinimo archyvo šaknis neatitinka %s.';
+$lang['package_upload_dir_failed'] = 'Nepavyko sukurti įkėlimo katalogo %s';
+$lang['package_url_invalid'] = 'Neteisingas paketo platinimo URL.';
+$lang['package_write_failed'] = 'Nepavyko įrašyti paketo į %s';
+$lang['package_zip_not_found'] = 'Paketo ZIP failas neegzistuoja: %s';
+
+/**
+ * ---------------------------------------------------------------
+ * Updates Section
  * ---------------------------------------------------------------
  * Language lines for updates section.
  */
